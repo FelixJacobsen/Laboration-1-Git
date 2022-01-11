@@ -1,1 +1,36 @@
+cd Desktop
+mkdir Lab_1_Git
+cd Lab_1_Git
+git init
+git add README.md
+git status
+git commit -m "Initial commit"
+git log
+git checkout -b feature1
+git add *
+git commit -m "Switch moose to mouse ands add dog on row four"
+git checkout Master
+git add *
+git commit README.md -m "Change from mouse to mahmut"
+git merge feature1
+git add README.md
+git commit -m "Solve conflict"'
+git tag extinct
+git reset --hard HEAD^
+git branch feature2
+git add README.md
+git commit -m "Change first letter to capital"
+git switch feature2
+git add fix1.txt
+git commit -m "Add fix1.txt"
+git add fix2.txt
+git commit -m "Add fix2.txt"
+git switch master
+git cherry-pick feature2
+git remote add origin https://github.com/FelixJacobsen/Laboration-1-Git.git
+git branch -M main
+git push -u origin main
+git push --all
+git push --tags
+
 
